@@ -118,6 +118,84 @@ footer{background:#3a322a;padding:40px 64px;display:flex;align-items:center;just
 .testimonial-stars{color:#c4a882;font-size:14px;letter-spacing:3px;}
 .testimonial-text{font-family:'Cormorant Garamond',serif;font-size:17px;font-style:italic;color:#4a4035;line-height:1.65;flex:1;}
 .testimonial-author{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#a99080;border-top:0.5px solid #e0d8cf;padding-top:12px;}
+
+/* ===== RESPONSIVO MOBILE ===== */
+@media (max-width: 768px) {
+
+  /* NAV */
+  nav {
+    padding: 16px 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .nav-links {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-links a { font-size: 11px; letter-spacing: 0.14em; }
+  .logo-name { font-size: 20px; }
+  .logo-sub { font-size: 9px; }
+
+  /* HERO */
+  .hero { padding: 60px 24px 52px; }
+  .hero h1 { font-size: 42px; }
+  .eyebrow { font-size: 10px; }
+  .hero-desc { font-size: 12px; }
+  .btn { padding: 12px 24px; font-size: 11px; margin: 6px 6px; }
+
+  /* SECTIONS */
+  .section { padding: 48px 24px; }
+  .section-title { font-size: 32px; }
+  .section-sub { font-size: 13px; }
+  .rule { margin: 0 24px; }
+
+  /* CONTENT WRAPPER */
+  .content-inner { background: #f7f4f0; }
+
+  /* SERVIÇOS — 1 coluna no mobile */
+  .services-grid { grid-template-columns: 1fr; }
+  .services-grid.single { grid-template-columns: 1fr; }
+  .service-card { padding: 24px 20px; min-height: auto; }
+  .service-name { font-size: 20px; }
+  .service-desc { font-size: 13px; }
+  .category-label { font-size: 10px; }
+
+  /* GALERIA — 1 coluna no mobile */
+  .gallery-grid { grid-template-columns: 1fr; gap: 24px; }
+  .ba-wrapper { aspect-ratio: 4/3; }
+  .ba-caption { font-size: 11px; }
+  .ba-handle { width: 36px; height: 36px; }
+  .ba-lbl { font-size: 9px; padding: 3px 8px; top: 10px; }
+  .ba-hint span { font-size: 9px; }
+
+  /* DEPOIMENTOS — 1 coluna */
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .testimonial { padding: 22px 20px; }
+  .testimonial-text { font-size: 15px; }
+
+  /* CONTATO */
+  .contact-section { padding: 56px 24px; }
+  .contact-desc { font-size: 13px; }
+  .wa-btn { padding: 14px 32px; font-size: 12px; }
+
+  /* FOOTER */
+  footer {
+    padding: 28px 24px;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  .footer-logo { font-size: 18px; }
+  .footer-copy { font-size: 11px; }
+}
+
+@media (max-width: 480px) {
+  .hero h1 { font-size: 34px; }
+  .section-title { font-size: 28px; }
+  .nav-links { gap: 12px; }
+  .nav-links a { font-size: 10px; }
+}
 </style>
 </head>
 <body>
